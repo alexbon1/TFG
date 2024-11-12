@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="#494949"
+                                                   tools:context=".controladores.inicio.Login">
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="148dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="#2D2F31"
+        android:fontFamily="@font/new_rocker"
+        android:shadowColor="#000000"
+        android:text="Login"
+        android:textColor="#FEE800"
+        android:textSize="36sp"
+        app:cornerRadius="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#000000"
+        app:strokeWidth="5px" />
+
+    <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:fontFamily="@font/new_rocker"
+            android:shadowColor="#000000"
+
+            android:shadowRadius="15"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="#FFE900"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+            android:id="@+id/editTextUser"
+            android:layout_width="341dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="88dp"
+            android:backgroundTint="#FFE900"
+            android:ems="10"
+            android:fontFamily="@font/new_rocker"
+            android:hint="User"
+        android:background="@drawable/rounded_corners"
+
+        android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="341dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="42dp"
+        android:background="@drawable/rounded_corners"
+
+        android:ems="10"
+            android:fontFamily="@font/new_rocker"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextUser" />
+
+    <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="#00FFFFFF"
+            android:fontFamily="@font/new_rocker"
+            android:shadowColor="#000000"
+            android:shadowRadius="15"
+            android:text="¿Forgot Password?"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+    <Button
+        android:id="@+id/buttonReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/new_rocker"
+        android:text="Return"
+        android:textColor="#FFEB3B"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

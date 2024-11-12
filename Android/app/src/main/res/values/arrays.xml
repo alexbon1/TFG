@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="p_personajes">
+        <item>@drawable/p001</item>
+
+        <!-- Agrega aquí más elementos si tienes más imágenes -->
+    </array>
+</resources>

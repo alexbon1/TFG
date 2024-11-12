@@ -1,0 +1,137 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#494949"
+    tools:context=".controladores.misiones.MisionCompleta"
+    tools:layout_editor_absoluteX="2dp"
+    tools:layout_editor_absoluteY="62dp">
+
+    <Button
+        android:id="@+id/buttonReturn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/new_rocker"
+        android:text="Salir"
+        android:textColor="#FFEB3B"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle3" />
+
+    <TextView
+        android:id="@+id/textViewTitle3"
+        android:layout_width="276dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#2D2F31"
+        android:fontFamily="@font/new_rocker"
+        android:gravity="center"
+        android:padding="10dp"
+        android:shadowColor="#000000"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPersonaje3"
+        app:layout_constraintVertical_bias="0.355" />
+
+    <ImageView
+        android:id="@+id/imageViewPersonaje3"
+        android:layout_width="178dp"
+        android:layout_height="263dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="196dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/TextViewTitle"
+        android:layout_width="320dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="512dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="@font/new_rocker"
+        android:gravity="center"
+        android:padding="10dp"
+        android:shadowColor="#000000"
+        android:textColor="#131313"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="148dp"
+        android:layout_height="133dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@drawable/logo_misiones" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fiesta" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="18dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReturn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/fiesta" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="234dp"
+        android:layout_height="271dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="9dp"
+        android:visibility="invisible"
+        android:rotationY="180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@drawable/fiesta" />
+
+    <ImageView
+        android:id="@+id/imageViewFallida"
+        android:layout_width="309dp"
+        android:layout_height="348dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469"
+        app:srcCompat="@drawable/fallida" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

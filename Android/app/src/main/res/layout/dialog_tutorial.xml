@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#494949">
+
+    <ImageView
+        android:id="@+id/imageViewClose"
+        android:layout_width="36dp"
+        android:layout_height="33dp"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cruzcerrar" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tutoriales"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:fontFamily="@font/new_rocker"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewClose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Inventario Section -->
+
+            <TextView
+                android:id="@+id/textViewInventario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2D2F31"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/new_rocker"
+                android:padding="16dp"
+                android:text="Inventario"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#FFEB3B"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewInventarioContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Equípate armas y armaduras que escalan segun su rareza, 10% común, 20% Raro, 30% Único, 40% Épico, 50% Legendario, para ser más persuasivo, cambia a tu campeón si te defrauda"
+                android:textColor="#FFFFFF"
+                android:visibility="gone" />
+
+            <!-- Misiones Section -->
+            <TextView
+                android:id="@+id/textViewMisiones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2D2F31"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/new_rocker"
+                android:padding="16dp"
+                android:text="Misiones"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#FFEB3B"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewMisionesContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="¿Cual es tu oficio noble guerrero? Se te asignarán misiones dependiendo de tu clase. Solo podrás realizar UNA misión al día, pero aqui la administración es completamente corrupta, por lo que se contemplará un soborno"
+                android:textColor="#FFFFFF"
+                android:visibility="gone" />
+
+            <!-- Combate Section -->
+
+            <TextView
+                android:id="@+id/textViewCombate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2D2F31"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/new_rocker"
+                android:padding="16dp"
+                android:text="Combate"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#FFEB3B"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewCombateContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="LLegala hora de los heroes, este será un duelo titánico en el que cada contrincante deberá atacar y defender alternativamente. Si el defensor defiende con el mismo elemento , fisico o mágico, que el atacante bloqueará el daño. ¡¡SOLO PUEDE QUEDAR UNO!!"
+                android:textColor="#FFFFFF"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

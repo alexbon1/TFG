@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#494949"
+        tools:context=".controladores.inicio.CreadorPersonaje">
+
+    <Button
+            android:id="@+id/buttonPasariIzqPers"
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:text="."
+            android:textSize="100sp"
+            android:fontFamily="@font/new_rocker"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="#00000000"/>
+
+    <Button
+            android:id="@+id/buttonPasarDrchPers"
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:text="."
+            android:textSize="100sp"
+            android:fontFamily="@font/new_rocker"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="#00FFFFFF"
+            android:verticalScrollbarPosition="defaultPosition" android:layout_marginEnd="16dp"
+            app:layout_constraintVertical_bias="0.0"/>
+    <ImageView
+            android:id="@+id/imageViewCreadorPersonaje"
+            android:layout_width="236dp"
+            android:layout_height="256dp"
+            app:srcCompat="@drawable/p001"
+            app:layout_constraintStart_toEndOf="@+id/buttonPasariIzqPers"
+            app:layout_constraintEnd_toStartOf="@+id/buttonPasarDrchPers"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="H,1:1"
+            android:layout_marginEnd="21dp" app:layout_constraintHorizontal_bias="0.0"
+    />
+    <Button
+            android:id="@+id/buttonCrear"
+            android:layout_width="279dp"
+            android:layout_height="68dp"
+            android:backgroundTint="#FFE900"
+            android:fontFamily="@font/new_rocker"
+            android:shadowColor="#000000"
+            android:text="Crear"
+            android:textColor="#131313"
+            android:textSize="36sp"
+            app:cornerRadius="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="#000000"
+            app:strokeWidth="5px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="40dp"/>
+
+    <TextView
+            android:id="@+id/textView3"
+            android:layout_width="359dp"
+            android:layout_height="145dp"
+            android:text="Texto"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintVertical_bias="0.039" android:textColor="#000000" android:textAlignment="center"
+            android:textSize="60sp" android:fontFamily="@font/new_rocker"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#494949"
+    tools:context=".controladores.tienda.Comprar">
+
+    <ImageView
+        android:id="@+id/imageViewElemento"
+        android:layout_width="314dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a001" />
+
+    <Button
+        android:id="@+id/buttonComprar"
+        android:layout_width="202dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#FFEB3B"
+        android:fontFamily="@font/new_rocker"
+        android:shadowColor="#000000"
+        android:text="Comprar"
+        android:textColor="#131313"
+        android:textSize="36sp"
+        app:cornerRadius="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#000000"
+        app:strokeWidth="5px" />
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="336dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/new_rocker"
+        android:text="Titulo"
+        android:textAlignment="center"
+        android:textColor="#FEEA3B"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewElemento" />
+
+    <TextView
+        android:id="@+id/textViewRareza"
+        android:layout_width="333dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/new_rocker"
+        android:paddingBottom="4dp"
+        android:text="Rareza:"
+        android:textAlignment="inherit"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombre" />
+
+    <TextView
+        android:id="@+id/textViewDescripcion"
+        android:layout_width="329dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/new_rocker"
+        android:text="xtuafdxaodxgvawgdqad"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonComprar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRareza"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/new_rocker"
+        android:text="Return"
+        android:textColor="#FFEB3B"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

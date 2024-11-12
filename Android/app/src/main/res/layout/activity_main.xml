@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#494949"
+    tools:context=".controladores.inicio.MainActivity">
+
+
+    <Button
+        android:id="@+id/buttonTutorial"
+        android:layout_width="59dp"
+        android:layout_height="63dp"
+        android:backgroundTint="#494949"
+        android:fontFamily="@font/new_rocker"
+        android:rotation="180"
+        android:shadowColor="#494949"
+        android:text="¿?"
+        android:textColor="#FFEB3B"
+        android:textSize="36sp"
+        app:cornerRadius="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:strokeColor="#494949"
+        app:strokeWidth="5px" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="279dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="#FFE900"
+        android:fontFamily="@font/new_rocker"
+        android:shadowColor="#000000"
+        android:text="Login"
+        android:textColor="#131313"
+        android:textSize="36sp"
+        app:cornerRadius="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:strokeColor="#000000"
+        app:strokeWidth="5px" />
+
+    <Button
+        android:id="@+id/buttonSign"
+        android:layout_width="279dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="156dp"
+        android:backgroundTint="#FFE900"
+        android:fontFamily="@font/new_rocker"
+        android:shadowColor="#000000"
+        android:text="Sign In"
+        android:textColor="#131313"
+        android:textSize="36sp"
+        app:cornerRadius="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#000000"
+        app:strokeWidth="5px" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="256dp"
+        android:layout_height="262dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logotfg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

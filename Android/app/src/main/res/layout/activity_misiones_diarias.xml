@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#494949"
+        tools:context=".controladores.misiones.MisionesDiarias">
+
+    <ImageView
+        android:id="@+id/imageViewMision"
+        android:layout_width="62dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_misiones" />
+
+    <TextView
+        android:id="@+id/textViewTitle2"
+        android:layout_width="323dp"
+        android:layout_height="82dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#2D2F31"
+        android:fontFamily="@font/new_rocker"
+        android:gravity="center"
+        android:padding="10dp"
+        android:shadowColor="#000000"
+
+        android:text="Recompensa:  200 Gladios  500Xp"
+        android:textAlignment="center"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.867" />
+
+    <TextView
+        android:id="@+id/TextViewTitle"
+        android:layout_width="325dp"
+        android:layout_height="106dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#2D2F31"
+        android:fontFamily="@font/new_rocker"
+        android:gravity="center"
+        android:padding="10dp"
+        android:shadowColor="#000000"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116" />
+
+    <ScrollView
+        android:layout_width="326dp"
+        android:layout_height="367dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewTitle"
+        app:layout_constraintVertical_bias="0.094">
+
+        <TextView
+            android:id="@+id/TextViewInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/new_rocker"
+            android:gravity="center"
+            android:padding="10dp"
+            android:shadowColor="#000000"
+            android:textColor="#FFEB3B"
+            android:textSize="24sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/new_rocker"
+        android:text="Return"
+        android:textColor="#FFEB3B"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

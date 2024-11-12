@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#494949"
+    tools:context=".controladores.Inicio_Personaje">
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/logo_tienda" android:id="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" android:layout_marginEnd="4dp"/>
+    <ImageView
+            android:layout_width="229dp"
+            android:layout_height="170dp" app:srcCompat="@drawable/fondo_nivel" android:id="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="36dp" app:layout_constraintBottom_toTopOf="@+id/imageViewPersonaje"
+            app:layout_constraintVertical_bias="0.089"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textViewNivel"
+            android:fontFamily="@font/new_rocker" android:textSize="96sp"
+            android:textColor="#FFFFFF" app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2" app:layout_constraintTop_toTopOf="@+id/imageView2"
+            android:layout_marginTop="16dp"/>
+
+    <ImageView
+            android:layout_width="230dp"
+            android:layout_height="394dp" android:id="@+id/imageViewPersonaje"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.502" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:layout_width="308dp"
+            android:layout_height="59dp" android:id="@+id/textViewNombreUser"
+            android:fontFamily="@font/new_rocker" android:textSize="40sp"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="140dp" android:textAlignment="center"
+            app:layout_constraintHorizontal_bias="0.495" app:layout_constraintTop_toBottomOf="@+id/imageViewPersonaje"
+            app:layout_constraintVertical_bias="0.714"/>
+    <ImageView
+            android:layout_width="107dp"
+            android:layout_height="108dp" app:srcCompat="@drawable/logo_misiones" android:id="@+id/imageViewMisiones"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNombreUser" app:layout_constraintVertical_bias="0.652"/>
+    <ImageView
+            android:layout_width="95dp"
+            android:layout_height="116dp" app:srcCompat="@drawable/logo_vs" android:id="@+id/imagenVS"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewMisiones"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.28" android:layout_marginBottom="8dp"/>
+    <ImageView
+            android:layout_width="94dp"
+            android:layout_height="117dp" app:srcCompat="@drawable/logo_armadura" android:id="@+id/imagenArmas"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp" android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toEndOf="@+id/imageViewMisiones" app:layout_constraintHorizontal_bias="1.0"/>
+    <TextView
+            android:text="500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textViewMonedas"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp" android:layout_marginStart="16dp" android:textColorHint="#FFEB3B"
+            android:textColorHighlight="#FFEB3B" android:fontFamily="@font/new_rocker" android:textSize="34sp"
+            android:textColor="#FFEB3B"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

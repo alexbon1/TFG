@@ -1,0 +1,187 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#494949"
+    tools:context=".controladores.inicio.SignIn">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/new_rocker"
+        android:shadowColor="#000000"
+        android:shadowRadius="15"
+        android:text="Sign In"
+        android:textAlignment="center"
+        android:textColor="#FFE900"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/rounded_corners"
+                android:ems="10"
+                android:fontFamily="@font/new_rocker"
+                android:hint="Email"
+                android:inputType="text|textEmailAddress"
+                android:textSize="38sp" />
+
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rounded_corners"
+                android:ems="10"
+                android:fontFamily="@font/new_rocker"
+                android:hint="Username"
+                android:inputType="text"
+                android:textSize="38sp" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rounded_corners"
+                android:ems="10"
+                android:fontFamily="@font/new_rocker"
+                android:hint="Name"
+                android:inputType="text"
+                android:textSize="38sp" />
+
+            <EditText
+                android:id="@+id/editTextSurname"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rounded_corners"
+                android:ems="10"
+                android:fontFamily="@font/new_rocker"
+                android:hint="Surname"
+                android:inputType="text"
+                android:textSize="38sp" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rounded_corners"
+                android:ems="10"
+                android:fontFamily="@font/new_rocker"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="38sp" />
+
+            <TextView
+                android:id="@+id/textViewcumple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/new_rocker"
+                android:shadowColor="#000000"
+                android:shadowRadius="15"
+                android:text="Fecha de nacimiento:"
+                android:textAlignment="center"
+                android:textColor="#FFE900"
+                android:textSize="35sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/day_spinner"
+                    android:layout_width="100dp"
+                    android:layout_height="77dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/rounded_corners" />
+
+                <Spinner
+                    android:id="@+id/month_spinner"
+                    android:layout_width="100dp"
+                    android:layout_height="77dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/rounded_corners" />
+
+                <Spinner
+                    android:id="@+id/year_spinner"
+                    android:layout_width="100dp"
+                    android:layout_height="77dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/rounded_corners" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="148dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#313435"
+        android:fontFamily="@font/new_rocker"
+        android:shadowColor="#000000"
+        android:text="Sign In"
+        android:textColor="#FFEB3B"
+        android:textSize="36sp"
+        app:cornerRadius="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp" />
+
+    <Button
+        android:id="@+id/buttonReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/new_rocker"
+        android:text="Return"
+        android:textColor="#FFEB3B"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="16dp"
+    android:background="#404040"
+    android:orientation="vertical">
+    <!-- Nombre -->
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="@font/new_rocker"
+        android:gravity="center"
+        android:padding="32dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="10"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp" />
+
+    <!-- Texto largo (Historia) -->
+
+    <!-- Botón de Cerrar -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#404040">
+
+        <TextView
+            android:id="@+id/textViewStory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="32dp"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#2D2F31"
+        android:fontFamily="@font/new_rocker"
+        android:text="Cerrar"
+        android:textColor="#FFEB3B"
+        android:textSize="28sp" />
+</LinearLayout>

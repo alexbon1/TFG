@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#494949"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewYOJP"
+        android:layout_width="177dp"
+        android:layout_height="216dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <ImageView
+        android:id="@+id/imageViewPrYO"
+        android:layout_width="233dp"
+        android:layout_height="212dp"
+        android:elevation="5dp"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="266:289"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.318"
+        app:srcCompat="@drawable/barraprogreso" />
+
+    <ProgressBar
+        android:id="@+id/progressBarYO"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="183dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="77dp"
+        android:background="@color/cardview_dark_background"
+        android:elevation="2dp"
+        android:progressTint="#FFEB3B"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPrYO"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewPrYO"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintStart_toStartOf="@+id/imageViewPrYO"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPrYO"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <ImageView
+        android:id="@+id/imageViewEnmigoJP"
+        android:layout_width="177dp"
+        android:layout_height="216dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageViewPrEN"
+        android:layout_width="229dp"
+        android:layout_height="215dp"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="266:289"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/barraprogreso" />
+
+    <ProgressBar
+        android:id="@+id/progressBarEnemigo"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="177dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/cardview_dark_background"
+        android:elevation="2dp"
+        android:progressTint="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPrEN"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewPrEN"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintStart_toStartOf="@+id/imageViewPrEN"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPrEN"
+        app:layout_constraintVertical_bias="0.508"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <ImageView
+        android:id="@+id/imageViewFisico"
+        android:layout_width="199dp"
+        android:layout_height="189dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewMagica"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewMagica"
+        android:layout_width="209dp"
+        android:layout_height="189dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="413dp"
+        android:layout_height="155dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewMagica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAccion">
+
+        <ImageView
+            android:id="@+id/imageViewAccionCont"
+            android:layout_width="115dp"
+            android:layout_height="108dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.489" />
+
+        <ImageView
+            android:id="@+id/imageViewAccionYo"
+            android:layout_width="115dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewVS"
+            android:layout_width="103dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="39dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewAccionCont"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageViewAccionYo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.457"
+            app:srcCompat="@drawable/logo_vs" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textViewAccion"
+        android:layout_width="251dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/new_rocker"
+        android:textAlignment="center"
+        android:textColor="#FFEB3B"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPrYO" />
+
+    <ImageView
+        android:id="@+id/imageViewArmaYO"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/no_arma"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPrYO"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewArmaduraYO"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/no_arma"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPrYO"
+        app:layout_constraintStart_toEndOf="@+id/imageViewArmaYO" />
+
+    <ImageView
+        android:id="@+id/imageViewArmaduraEN"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/no_arma"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPrEN"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewArmaEN" />
+
+    <ImageView
+        android:id="@+id/imageViewArmaEN"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/no_arma"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPrEN"
+
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
